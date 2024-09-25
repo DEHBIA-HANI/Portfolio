@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
-import Content from "./Content";
+import logo from "../assets/images/logo.webp";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -44,7 +43,6 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <Content />
       </header>
     </div>
   );

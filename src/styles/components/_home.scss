@@ -1,0 +1,60 @@
+.header_content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 15px;
+  align-items: center;
+  min-height: 100vh;
+  width: 86%;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: headerAnim 1.5s forwards;
+  @keyframes headerAnim {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .part_left {
+    width: 100%;
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      text-align: left;
+      font-family: $font-2;
+      @media screen and (max-width: 1080px) {
+        font-size: 1.4rem;
+      }
+    }
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      font-family: $font-2;
+      @media screen and (max-width: 1080px) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      margin: 40px auto 60px;
+      font-style: italic;
+      width: 85%;
+      font-size: 1.2rem;
+      text-align: justify;
+      @media screen and (max-width: 1080px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  .part_right {
+    img {
+      width: 240px;
+      height: 240px;
+      transform: rotate(-30deg);
+      border: 1px solid $color-5;
+      @media screen and (max-width: 1080px) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

@@ -9,14 +9,15 @@
 // $font-1: "font-1", sans-serif;
 // $font-2: "font-2", sans-serif;
 
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-$font-1: "Monsterrat", sans-serif;
-$font-2: "Dongle", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap");
+$font-1: "IBM Plex Sans Thai Looped", sans-serif;
+$font-2: "Simonetta", serif;
 
-$color-1: #9bbd97;
-$color-2: #445d43;
+$color-1: #f4fbf6;
+$color-2: #1d3b31;
 $color-3: black;
 $color-4: white;
+$color-5: #c4e8d1;
 
 * {
   padding: 0;
@@ -32,10 +33,10 @@ $color-4: white;
 body {
   margin: 0 auto;
   font-family: $font-1;
-  // background: $color-1;
-  background: url(../assets/images/kabylie2.jpg) fixed center/cover;
+  background: $color-1;
+  color: $color-2;
   text-align: center;
-  max-width: 1300px;
+  // max-width: 1300px;
   margin: 0 auto;
   &:before {
     content: "";

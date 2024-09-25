@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Booki",
+        "cover": "./assets/images/Booki.webp",
+        "site": {
+            "gitHub": "lien_vers_repo_gitHub",
+            "voirLeSite": "lien_vers_le_site"
+        },
+        "mission": "Intégration de la page d'accueil d'une agence de voyage en HTML et CSS à partir de maquettes Figma. Accent mis sur le design responsive et la rédaction manuelle du code, afin de renforcer mes compétences en développement front-end.",
+        "dateRealisation": "2024-02-29"
+    },
+    {
+        "id": 2,
+        "title": "Sophie Bluel",
+        "cover": "./assets/images/Sophie_Bluel.webp",
+        "site": {
+            "gitHub": "lien_vers_repo_gitHub",
+            "voirLeSite": "lien_vers_le_site"
+        },
+        "mission": "Développeur front-end chez ArchiWebos : conception d'un site portfolio dynamique pour une architecte d'intérieur, intégration d'une API pour la gestion CRUD des projets, création d'une galerie interactive avec filtrage, développement d'une page de connexion fonctionnelle, et gestion des médias via une modale.",
+        "dateRealisation": "2024-04-18"
+    },
+    {
+        "id": 3,
+        "title": "Kasa",
+        "cover": "./assets/images/Kasa.webp",
+        "site": {
+            "gitHub": "lien_vers_repo_gitHub",
+            "voirLeSite": "lien_vers_le_site"
+        },
+        "mission": "Lors de la refonte du site Kasa, j'ai développé l'application front-end avec React et React Router, créant une interface utilisateur moderne et réactive. J'ai intégré un carrousel interactif pour une navigation fluide des images de propriétés et assuré une mise en page responsive en me basant sur des maquettes Figma et des données JSON simulées, tout en respectant les normes de codage.",
+        "dateRealisation": "2024-06-27"
+    }
+]
