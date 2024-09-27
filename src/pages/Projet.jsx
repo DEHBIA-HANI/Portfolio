@@ -1,9 +1,15 @@
 import React from "react";
-
+import Card from "../components/Card";
+import fichier from "../fichier.json";
 const Projet = () => {
   return (
-    <div className="projet-page">
-      <h1>projet</h1>
+    <div className="projectCard">
+      <h2>Projets</h2>
+      <div className="containerCard">
+        {fichier.map((projet) => (
+          <Card key={projet.id} projet={projet} />
+        ))}
+      </div>
     </div>
   );
 };

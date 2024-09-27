@@ -1,0 +1,28 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #002217e2;
+  border-radius: 18px;
+  padding: 7px 15px;
+  box-shadow: 0 4px 1px rgba(255, 255, 255, 0.265),
+    0 10px 1px rgba(255, 255, 255, 0.05);
+  transition: min-height 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  .titleDescription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+      color: $color-4;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    i {
+      color: $color-4;
+      font-size: 1.7rem;
+      transform: rotate(90deg);
+      cursor: pointer;
+    }
+  }
+}

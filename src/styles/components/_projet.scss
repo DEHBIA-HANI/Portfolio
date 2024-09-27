@@ -1,0 +1,23 @@
+.projectCard {
+  background: $color-4;
+  border-radius: 18px;
+  width: 86%;
+  margin: auto;
+  padding: 50px 0px;
+  @include center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-family: $font-2;
+  }
+  .containerCard {
+    @include center;
+    flex-direction: row;
+    gap: 77px;
+  }
+}
