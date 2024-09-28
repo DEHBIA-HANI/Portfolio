@@ -12,6 +12,14 @@ const Card = ({ projet }) => {
       {projet.release_date ? (
         <h5>Realisé le : {dateFormater(projet.release_date)}</h5>
       ) : null}
+      <div className="languages">
+        <h5>Technos :</h5>
+        <ul className="languages-list">
+          {projet.languages.map((lang, index) => (
+            <li key={index}>{lang}</li>
+          ))}
+        </ul>
+      </div>
       <ul>
         <li>
           <a href={projet.site.link} target="_blank" rel="noopener noreferrer">
@@ -19,11 +27,16 @@ const Card = ({ projet }) => {
           </a>
         </li>
         <li>
-          <a href={projet.site.link} target="_blank" rel="noopener noreferrer">
+          <a
+            href={projet.site.gitHub}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
         </li>
       </ul>
+
       <Collapse title="Description" msg={projet.description} />
     </div>
   );

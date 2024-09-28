@@ -2,7 +2,7 @@
   background: $color-4;
   border-radius: 18px;
   width: 86%;
-  margin: auto;
+  margin: 150px auto;
   padding: 50px 0px;
   @include center;
   justify-content: center;
@@ -18,6 +18,12 @@
   .containerCard {
     @include center;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 77px;
+    margin: 0 30px;
+  }
+  @media screen and (max-width: 1860px) {
+    gap: 55px;
   }
 }

@@ -4,9 +4,10 @@
         "title": "Booki",
         "cover": "/image/Booki.webp",
         "site": {
-            "gitHub": "lien_vers_repo_gitHub",
-            "link": "lien_vers_le_site"
+            "gitHub": "https://github.com/DEHBIA-HANI/booki-starter-code.git",
+            "link": "https://dehbia-hani.github.io/booki-starter-code/"
         },
+        "languages": ["HTML", "CSS"],
         "description": "Intégration de la page d'accueil d'une agence de voyage en HTML et CSS à partir de maquettes Figma. Accent mis sur le design responsive et la rédaction manuelle du code, afin de renforcer mes compétences en développement front-end.",
         "release_date": "2024-02-29"
     },
@@ -15,9 +16,10 @@
         "title": "Sophie Bluel",
         "cover": "/image/Sophie_Bluel.webp",
         "site": {
-            "gitHub": "lien_vers_repo_gitHub",
+            "gitHub": "https://github.com/DEHBIA-HANI/Portfolio-architecte-sophie-bluel.git",
             "link": "lien_vers_le_site"
         },
+        "languages": ["JavaSript"],
         "description": "Développeur front-end chez ArchiWebos : conception d'un site portfolio dynamique pour une architecte d'intérieur, intégration d'une API pour la gestion CRUD des projets, création d'une galerie interactive avec filtrage, développement d'une page de connexion fonctionnelle, et gestion des médias via une modale.",
         "release_date": "2024-04-18"
     },
@@ -26,9 +28,10 @@
         "title": "Kasa",
         "cover": "/image/Kasa.webp",
         "site": {
-            "gitHub": "lien_vers_repo_gitHub",
+            "gitHub": "https://github.com/DEHBIA-HANI/Kasa.git",
             "link": "lien_vers_le_site"
         },
+        "languages": ["React","Sass"],
         "description": "développement d'une application front-end avec React et React Router, création d'une interface utilisateur moderne et réactive, intégration d'un carrousel interactif pour une navigation fluide des images de propriétés, mise en page responsive basée sur des maquettes Figma et des données JSON simulées, tout en respectant les normes de codage.",
         "release_date": "2024-06-27"
     }

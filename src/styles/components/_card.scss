@@ -1,6 +1,6 @@
 .card {
   flex: 1 0 25%;
-  min-width: 480px;
+  min-width: 450px;
   max-width: 450px;
   background: $color-2;
   border-radius: 35px;
@@ -8,6 +8,9 @@
   padding: 26px 15px 30px;
   position: relative;
   overflow: hidden;
+  // @media screen and (max-width: 1860px) {
+  //   min-width: 350px;
+  // }
   &::after {
     content: "";
     height: 90px;
@@ -41,7 +44,7 @@
     font-size: 1.2rem;
     font-weight: 300;
     color: $color-4;
-    margin-top: 3px;
+    margin-top: 10px;
   }
   ul {
     margin: 6px 0;
@@ -80,5 +83,33 @@
     @media screen and (max-width: 450px) {
       font-size: 0.95rem;
     }
+  }
+  .languages {
+    @include center;
+    gap: 20px;
+    h5 {
+      margin-top: 0;
+    }
+  }
+
+  .languages-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .languages-list li {
+    color: $color-1;
+    width: auto;
+    border-radius: 5px;
+    border-bottom: 1px solid $color-5;
+    background: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
   }
 }
