@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.webp";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
+  const [navVisible, setNavVisible] = useState(true);
+  const [lastScroll, setLastScroll] = useState(0); // Sauvegarde de la dernière position de défilement
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      // Si on descend, on cache la navbar
+      if (currentScroll > lastScroll && currentScroll > 60) {
+        setNavVisible(false);
+      }
+      // Si on monte, on affiche la navbar
+      else if (currentScroll < lastScroll) {
+        setNavVisible(true);
+      }
+
+      // Mettre à jour la dernière position de défilement
+      setLastScroll(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Nettoyage lors du démontage du composant
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScroll]);
+
   return (
-    <div className="header">
+    <div
+      className="navbar"
+      style={{
+        opacity: navVisible ? 1 : 0,
+        transition: "opacity 0.3s ease",
+      }}
+    >
       <header>
         <nav>
           <img src={logo} alt="logo Dehbia hachi" />

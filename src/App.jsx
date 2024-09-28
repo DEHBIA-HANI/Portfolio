@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Competences from "./components/Competences";
+// import { Helmet } from "react-helmet";
 
 const App = () => {
   return (
