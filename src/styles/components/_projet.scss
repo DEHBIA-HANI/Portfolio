@@ -7,6 +7,9 @@
   @include center;
   justify-content: center;
   flex-direction: column;
+  @media screen and (max-width: 720px) {
+    width: 100%;
+  }
 
   h2 {
     font-size: 5rem;
@@ -22,6 +25,10 @@
     justify-content: center;
     gap: 77px;
     margin: 0 30px;
+    @media screen and (max-width: 720px) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
   }
   @media screen and (max-width: 1860px) {
     gap: 55px;

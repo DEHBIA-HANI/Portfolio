@@ -1,29 +1,25 @@
 import React from "react";
-import portrait from "../assets/images/Dehbia1.webp";
-import Projet from "./Projet";
+import Projet from "../components/Projet";
+import Competences from "../components/Competences";
+import Contact from "../components/Contact";
+import About from "../components/About";
 
 const Home = () => {
   return (
     <div>
       <main>
-        <section className="header_container">
-          <div className="part_left">
-            <h1>Bonjour ,</h1>
-            <h2>Je suis Dehbia Hachi</h2>
-
-            <p>
-              Développeuse front-end diplômée, je me suis reconvertie après 6
-              ans comme infirmière. Passionnée par le web, j’allie rigueur et
-              créativité pour concevoir des interfaces performantes et
-              esthétiques, avec une attention particulière à l’expérience
-              utilisateur.
-            </p>
-          </div>
-          <div className="part_right">
-            <img src={portrait} alt="portrait Dehbia Hachi" />
-          </div>
+        <section id="about" className="about_section">
+          <About />
         </section>
-        <Projet />
+        <section id="projets" className="projects_section">
+          <Projet />
+        </section>
+        <section id="competences" className="competences_section">
+          <Competences />
+        </section>
+        <section id="contact" className="contact_section">
+          <Contact />
+        </section>
       </main>
     </div>
   );

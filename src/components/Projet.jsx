@@ -1,6 +1,7 @@
 import React from "react";
-import Card from "../components/Card";
+import Card from "./Card";
 import fichier from "../fichier.json";
+
 const Projet = () => {
   return (
     <div className="projectCard">
