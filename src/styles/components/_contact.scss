@@ -1,9 +1,113 @@
+.formContact {
+  width: 86%;
+  background: #03251a;
+  color: $color-5;
+  border-radius: 18px;
+  padding-left: 18px;
+  margin: 0 auto 70px;
+  min-height: 640px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  form {
+    display: grid;
+    gap: 18px;
+    padding: 60px 0px;
+    margin: 0 66px 0 10px;
+    grid-template-rows: 45px 18px 45px 18px 200px 1fr;
+
+    .name-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr 2fr;
+      grid-template-rows: auto;
+      grid-template-areas: "name-label name-input email-label email-input";
+      gap: 5px;
+      align-items: center;
+      .name-label {
+        grid-area: name-label;
+      }
+
+      .name-input {
+        grid-area: name-input;
+        color: $color-5;
+        background: #03251a;
+        outline: none;
+      }
+
+      .email-label {
+        grid-area: email-label;
+        margin-left: 50px;
+      }
+
+      .email-input {
+        grid-area: email-input;
+        color: $color-5;
+        background: #03251a;
+        outline: none;
+      }
+    }
+    label {
+      font-size: 1.73rem;
+      font-family: $font-2;
+      letter-spacing: 1px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    .btn {
+      background: none;
+      border: 1px solid $color-5;
+      border-radius: 50px;
+      color: $color-5;
+      padding: 8px;
+      font-size: 1.28rem;
+      outline: none;
+    }
+    textarea {
+      border-radius: 4px;
+      resize: none;
+    }
+    input[type="text"],
+    input[type="email"] {
+      height: 46px;
+    }
+  }
+  .submit-container {
+    display: flex;
+    align-items: flex-end;
+    .btn {
+      font-size: 1.5rem;
+      font-family: $font-2;
+      padding: 10px 33px;
+    }
+  }
+}
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 31.2px;
+  letter-spacing: 2px;
+  font-family: $font-2;
+}
 .contact {
-  h2 {
-    font-size: 5rem;
-    text-align: center;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
-    font-family: $font-2;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  border-left: 1px solid $color-5;
+  p {
+    font-size: 1.63rem;
+  }
+  div {
+    border-bottom: 1px solid $color-5;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    i {
+      font-size: 1.62rem;
+      font-family: $font-2;
+      letter-spacing: 1px;
+      padding-left: 40px;
+      padding-right: 50px;
+      text-align: left;
+    }
   }
 }

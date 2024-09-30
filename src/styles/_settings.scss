@@ -15,7 +15,7 @@ $font-2: "Simonetta", serif;
 
 $color-1: #f4fbf6;
 $color-2: #1d3b31;
-$color-3: black;
+$color-3: #002217e2;
 $color-4: white;
 $color-5: #c4e8d1;
 
@@ -43,7 +43,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    background: $color-3;
+    background: black;
     animation: animBefore 1.5s ease forwards;
     animation-delay: 0.15s;
     z-index: -50;

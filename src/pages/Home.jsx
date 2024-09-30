@@ -17,10 +17,10 @@ const Home = () => {
         <section id="competences" className="competences_section">
           <Competences />
         </section>
-        <section id="contact" className="contact_section">
-          <Contact />
-        </section>
       </main>
+      <footer id="contact" className="contact_section">
+        <Contact />
+      </footer>
     </div>
   );
 };
