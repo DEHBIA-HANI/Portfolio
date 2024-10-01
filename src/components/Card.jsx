@@ -7,37 +7,45 @@ const Card = ({ projet }) => {
   };
   return (
     <div className="card">
-      <img src={projet.cover} alt={projet.title} className="card_image" />
-      <h3>{projet.title}</h3>
-      {projet.release_date ? (
-        <h5>Realisé le : {dateFormater(projet.release_date)}</h5>
-      ) : null}
-      <div className="languages">
-        <h5>Technos :</h5>
-        <ul className="languages-list">
-          {projet.languages.map((lang, index) => (
-            <li key={index}>{lang}</li>
-          ))}
-        </ul>
+      <div>
+        <img src={projet.cover} alt={projet.title} className="card_image" />
       </div>
-      <ul>
-        <li>
-          <a href={projet.site.link} target="_blank" rel="noopener noreferrer">
-            Visiter le site
-          </a>
-        </li>
-        <li>
-          <a
-            href={projet.site.gitHub}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </li>
-      </ul>
+      <div>
+        <h3>{projet.title}</h3>
+        {projet.release_date ? (
+          <h5>Realisé le : {dateFormater(projet.release_date)}</h5>
+        ) : null}
+        <div className="languages">
+          <h5>Technos :</h5>
+          <ul className="languages-list">
+            {projet.languages.map((lang, index) => (
+              <li key={index}>{lang}</li>
+            ))}
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <a
+              href={projet.site.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visiter le site
+            </a>
+          </li>
+          <li>
+            <a
+              href={projet.site.gitHub}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+        </ul>
 
-      <Collapse title="Description" msg={projet.description} />
+        <Collapse title="Description" msg={projet.description} />
+      </div>
     </div>
   );
 };

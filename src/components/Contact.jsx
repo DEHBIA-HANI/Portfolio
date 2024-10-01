@@ -61,7 +61,7 @@ const Contact = () => {
             />
           </div>
           <label htmlFor="subject">Objet</label>
-          <input type="text" id="subject" />
+          <input type="text" id="subject" name="subject" />
           <label htmlFor="message">Message</label>
           <textarea name="message" id="message"></textarea>
           <div className="submit-container">
@@ -72,20 +72,23 @@ const Contact = () => {
           <div>
             <i>
               {" "}
-              <FontAwesomeIcon icon={faMobileScreenButton} /> phone
+              <FontAwesomeIcon icon={faMobileScreenButton} />{" "}
+              <span className="text"> phone</span>
             </i>
             <p> +33 6 59 57 39 43</p>
           </div>
           <div>
             <i>
-              <FontAwesomeIcon icon={faEnvelope} /> email
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              <span className="text"> email</span>
             </i>
             <p>dabihachi85@gmail.com</p>
           </div>
           <div>
             <i>
               {" "}
-              <FontAwesomeIcon icon={faLocationDot} /> address
+              <FontAwesomeIcon icon={faLocationDot} />{" "}
+              <span className="text"> address</span>
             </i>
             <p>
               Lagny-sur-Marne 77400

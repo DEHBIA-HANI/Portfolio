@@ -7,7 +7,10 @@
   margin: auto;
   padding: 3.5rem;
   border-radius: 18px;
-
+  @media (max-width: 740px) {
+    padding: 3rem 20px;
+    width: 80%;
+  }
   .tech-box:last-child {
     grid-column: span 2;
   }
@@ -29,13 +32,12 @@
   @include center;
   justify-content: space-between;
   flex-direction: column;
-  border: 1px solid $color-5;
   padding: 20px;
   border-radius: 8px;
   margin: 10px;
   background-color: $color-3;
   color: $color-4;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 8px $color-5;
   @media screen and (max-width: 720px) {
     width: 100%;
     margin: auto;

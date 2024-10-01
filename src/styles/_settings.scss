@@ -24,6 +24,9 @@ $color-5: #c4e8d1;
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 @mixin center {
   display: flex;
   justify-content: center;

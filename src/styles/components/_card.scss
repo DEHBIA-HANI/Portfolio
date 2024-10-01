@@ -6,18 +6,30 @@
   border-radius: 35px;
   margin: 5px;
   padding: 26px 15px 30px;
-  position: relative;
+  // position: relative;
   overflow: hidden;
-
-  &::after {
-    content: "";
-    height: 90px;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(195, 34, 34, 0) 0%, $color-4 55%);
-    transform: translateX(-50%);
-    bottom: 0;
-    border-radius: 0 0 30px 30px;
+  @media screen and (max-width: 1195px) {
+    max-width: none;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 50px;
+    align-items: center;
   }
+  @media screen and (max-width: 941px) {
+    width: 500px;
+    display: block;
+  }
+
+  // &::after {
+  //   content: "";
+  //   height: 90px;
+  //   width: 100%;
+  //   background: linear-gradient(180deg, rgba(195, 34, 34, 0) 0%, $color-4 55%);
+  //   transform: translateX(-50%);
+  //   bottom: 0;
+  //   border-radius: 0 0 30px 30px;
+  // }
   img {
     width: 80%;
     height: 370px;
@@ -28,6 +40,12 @@
     border-radius: 40px;
     box-shadow: 0 8px 1px rgba(255, 255, 255, 0.5),
       0 16px 1px rgba(255, 255, 255, 0.05);
+    @media screen and (max-width: 1195px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 941px) {
+      width: 70%;
+    }
   }
   h3 {
     margin: 30px 0 0px;
