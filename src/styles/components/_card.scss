@@ -1,131 +1,233 @@
-.card {
-  flex: 1 0 25%;
-  min-width: 450px;
-  max-width: 450px;
-  background: $color-2;
-  border-radius: 35px;
-  margin: 5px;
-  padding: 26px 15px 30px;
-  // position: relative;
-  overflow: hidden;
-  @media screen and (max-width: 1195px) {
-    max-width: none;
-    width: 450px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 50px;
-    align-items: center;
+.containerCard {
+  background: $color-5;
+  width: 86%;
+  margin: auto;
+  border-radius: 18px;
+  padding: 40px;
+  @include center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    gap: 20px;
   }
-  @media screen and (max-width: 941px) {
-    width: 500px;
-    display: block;
+  @media screen and (max-width: 329px) {
+    padding: 10px;
+    border-radius: 0px;
+    gap: 6px;
   }
-
-  // &::after {
-  //   content: "";
-  //   height: 90px;
-  //   width: 100%;
-  //   background: linear-gradient(180deg, rgba(195, 34, 34, 0) 0%, $color-4 55%);
-  //   transform: translateX(-50%);
-  //   bottom: 0;
-  //   border-radius: 0 0 30px 30px;
-  // }
-  img {
-    width: 80%;
-    height: 370px;
-    object-fit: cover;
-    object-position: top;
-    display: block;
-    margin: 0 auto;
-    border-radius: 40px;
-    box-shadow: 0 8px 1px rgba(255, 255, 255, 0.5),
-      0 16px 1px rgba(255, 255, 255, 0.05);
+  .card {
+    flex: 1 0 25%;
+    min-width: 450px;
+    background: $color-2;
+    border-radius: 35px;
+    margin: 5px;
+    padding: 26px 15px 30px;
+    overflow: hidden;
     @media screen and (max-width: 1195px) {
-      width: 100%;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      gap: 50px;
+      align-items: center;
     }
     @media screen and (max-width: 941px) {
-      width: 70%;
+      display: block;
     }
-  }
-  h3 {
-    margin: 30px 0 0px;
-    letter-spacing: 1px;
-    line-height: 20px;
-    color: $color-4;
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  h5 {
-    letter-spacing: 1px;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: $color-4;
-    margin-top: 10px;
-  }
-  ul {
-    margin: 6px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  li {
-    background: $color-3;
-    border-radius: 18px;
-    padding: 7px 6px;
-    margin: 0 4px 4px 0;
-    font-size: 1.1rem;
-    width: 165px;
-    text-align: center;
-    &:hover {
-      transform: scale(1.1);
+    @media screen and (max-width: 498px) {
+      min-width: 430px;
     }
-
-    a {
-      text-decoration: none;
+    @media screen and (max-width: 481px) {
+      min-width: 380px;
+    }
+    @media screen and (max-width: 481px) {
+      min-width: 360px;
+    }
+    @media screen and (max-width: 400px) {
+      min-width: 320px;
+    }
+    @media screen and (max-width: 380px) {
+      min-width: 300px;
+    }
+    @media screen and (max-width: 340px) {
+      min-width: 290px;
+    }
+    @media screen and (max-width: 329px) {
+      min-width: 280px;
+    }
+    // &::after {
+    //   content: "";
+    //   height: 90px;
+    //   width: 100%;
+    //   background: linear-gradient(180deg, rgba(195, 34, 34, 0) 0%, $color-4 55%);
+    //   transform: translateX(-50%);
+    //   bottom: 0;
+    //   border-radius: 0 0 30px 30px;
+    // }
+    img {
+      width: 80%;
+      height: 370px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      margin: 0 auto;
+      border-radius: 40px;
+      box-shadow: 0 8px 1px rgba(255, 255, 255, 0.5),
+        0 16px 1px rgba(255, 255, 255, 0.05);
+      @media screen and (max-width: 1195px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 941px) {
+        width: 90%;
+      }
+      @media screen and (max-width: 408px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 495px) {
+        height: 340px;
+      }
+      @media screen and (max-width: 400px) {
+        height: 300px;
+      }
+      @media screen and (max-width: 340px) {
+        height: 250px;
+      }
+      @media screen and (max-width: 329px) {
+        width: 88%;
+        height: 170px;
+      }
+    }
+    h3 {
+      margin: 30px 0 0px;
+      letter-spacing: 1px;
+      line-height: 20px;
       color: $color-4;
+      font-size: 1.5rem;
+      font-weight: 500;
+      @media screen and (max-width: 400px) {
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: 340px) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 329px) {
+        font-size: 1rem;
+        line-height: 0px;
+        letter-spacing: 0.8px;
+      }
     }
-  }
-  p {
-    font-size: 1.2rem;
-    padding: 20px 15px;
-    background: $color_4;
-    color: $color-2;
-    margin-bottom: 30px;
-    border-radius: 0 0 18px 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    @media screen and (max-width: 450px) {
-      font-size: 0.95rem;
-    }
-  }
-  .languages {
-    @include center;
-    gap: 20px;
     h5 {
-      margin-top: 0;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: $color-4;
+      margin-top: 10px;
+      @media screen and (max-width: 400px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 340px) {
+        font-size: 0.9rem;
+      }
+      @media screen and (max-width: 329px) {
+        font-size: 0.75rem;
+      }
     }
-  }
+    .cardLink {
+      margin: 6px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      @media screen and (max-width: 480px) {
+        gap: 8px;
+      }
 
-  .languages-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 18px;
-    list-style: none;
-    padding: 0;
-  }
+      li {
+        background: $color-3;
+        border-radius: 18px;
+        padding: 7px 6px;
+        margin: 0 4px 4px 0;
+        font-size: 1.1rem;
+        width: 165px;
+        text-align: center;
+        @media screen and (max-width: 400px) {
+          font-size: 1rem;
+          width: 156px;
+        }
+        @media screen and (max-width: 340px) {
+          font-size: 0.96rem;
+        }
+        @media screen and (max-width: 329px) {
+          font-size: 0.75rem;
+          width: 100px;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
 
-  .languages-list li {
-    color: $color-1;
-    width: auto;
-    border-radius: 5px;
-    border-bottom: 1px solid $color-5;
-    background: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
+        a {
+          text-decoration: none;
+          color: $color-4;
+        }
+      }
+    }
+    p {
+      font-size: 1.2rem;
+      padding: 20px 15px;
+      background: $color_4;
+      color: $color-2;
+      margin-bottom: 30px;
+      border-radius: 0 0 18px 18px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      @media screen and (max-width: 450px) {
+        font-size: 0.95rem;
+      }
+      @media screen and (max-width: 329px) {
+        font-size: 0.85rem;
+        line-height: 1.2;
+        padding: 7px 5px;
+        letter-spacing: normal;
+        margin-bottom: 8px;
+      }
+    }
+    .languages {
+      @include center;
+      gap: 20px;
+      h5 {
+        margin-top: 0;
+      }
+    }
+
+    .languages-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 18px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .languages-list li {
+      color: $color-1;
+      width: auto;
+      border-radius: 5px;
+      border-bottom: 1px solid $color-5;
+      background: none;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
+      @media screen and (max-width: 400px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 340px) {
+        font-size: 0.9rem;
+      }
+      @media screen and (max-width: 329px) {
+        font-size: 0.75rem;
+      }
+    }
   }
 }

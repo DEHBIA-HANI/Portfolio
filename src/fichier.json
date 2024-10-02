@@ -17,9 +17,9 @@
         "cover": "/image/Sophie_Bluel.webp",
         "site": {
             "gitHub": "https://github.com/DEHBIA-HANI/Portfolio-architecte-sophie-bluel.git",
-            "link": "lien_vers_le_site"
+            "link": "https://architecte-sophie-bluel1.vercel.app/"
         },
-        "languages": ["JavaSript"],
+        "languages": ["JavaScript"],
         "description": "Développeur front-end chez ArchiWebos : conception d'un site portfolio dynamique pour une architecte d'intérieur, intégration d'une API pour la gestion CRUD des projets, création d'une galerie interactive avec filtrage, développement d'une page de connexion fonctionnelle, et gestion des médias via une modale.",
         "release_date": "2024-04-18"
     },

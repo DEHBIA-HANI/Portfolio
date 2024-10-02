@@ -27,6 +27,10 @@
       }
     }
   }
+  @media screen and (max-width: 329px) {
+    border-radius: 0px;
+    padding: 1.5rem;
+  }
 }
 .tech-box {
   @include center;
@@ -41,6 +45,9 @@
   @media screen and (max-width: 720px) {
     width: 100%;
     margin: auto;
+  }
+  @media screen and (max-width: 329px) {
+    padding: 15px;
   }
 }
 
@@ -76,17 +83,24 @@
 }
 
 .title {
-  font-size: 18px;
+  font-size: 1.3rem;
   font-weight: 600;
   font-family: $font-2;
   margin-bottom: 5px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  @media screen and (max-width: 1200px) {
+    font-size: 1rem;
+  }
 }
 
 .description {
-  font-size: 14px;
+  font-size: 1.1rem;
   color: $color-4;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  @media screen and (max-width: 1200px) {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
 }
 .icon-container {
   .react-logo {

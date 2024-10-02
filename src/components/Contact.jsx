@@ -60,6 +60,7 @@ const Contact = () => {
               name="email"
             />
           </div>
+
           <label htmlFor="subject">Objet</label>
           <input type="text" id="subject" name="subject" />
           <label htmlFor="message">Message</label>

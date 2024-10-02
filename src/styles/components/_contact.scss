@@ -15,6 +15,11 @@
   @media screen and (max-width: 720px) {
     width: 100%;
   }
+  @media screen and (max-width: 329px) {
+    border-radius: 0px;
+    margin-bottom: 0;
+  }
+
   form {
     display: grid;
     gap: 18px;
@@ -27,6 +32,12 @@
     }
     @media screen and (max-width: 396px) {
       grid-template-rows: 200px 22px 45px 22px 200px 1fr;
+      padding: 20px 0px;
+    }
+    @media screen and (max-width: 329px) {
+      padding: 10px 0;
+      grid-template-rows: 120px 10px 22px 10px 150px 1fr;
+      margin-bottom: 10px;
     }
     .name-container {
       display: grid;
@@ -45,6 +56,10 @@
         width: 60%;
         @media screen and (max-width: 500px) {
           width: 100%;
+        }
+        @media screen and (max-width: 329px) {
+          gap: 0;
+          height: 131px;
         }
       }
 
@@ -81,6 +96,9 @@
       @media screen and (max-width: 369px) {
         font-size: 1.38rem;
       }
+      @media screen and (max-width: 329px) {
+        font-size: 1rem;
+      }
     }
     input[type="text"],
     input[type="email"],
@@ -95,6 +113,10 @@
       outline: none;
       box-shadow: 0 8px 1px rgba(255, 255, 255, 0.5),
         0 16px 1px rgba(255, 255, 255, 0.05);
+      @media screen and (max-width: 329px) {
+        box-shadow: 0 4px 1px rgba(255, 255, 255, 0.5),
+          0 10px 1px rgba(255, 255, 255, 0.05);
+      }
     }
     textarea {
       border-radius: 4px;
@@ -103,6 +125,9 @@
     input[type="text"],
     input[type="email"] {
       height: 46px;
+      @media screen and (max-width: 329px) {
+        height: 30px;
+      }
     }
     input[type="text"],
     input[type="email"],
@@ -118,6 +143,9 @@
     @media screen and (max-width: 396px) {
       margin-top: 43.89px;
     }
+    @media screen and (max-width: 329px) {
+      margin-top: 10.89px;
+    }
     .btn {
       font-size: 1.5rem;
       font-family: $font-2;
@@ -125,6 +153,10 @@
 
       @media screen and (max-width: 376px) {
         font-size: 1.42rem;
+      }
+      @media screen and (max-width: 329px) {
+        font-size: 1rem;
+        padding: 5px 23px;
       }
     }
   }
@@ -136,9 +168,17 @@ h2 {
   padding-top: 31.2px;
   letter-spacing: 2px;
   font-family: $font-2;
-  @media screen and (max-width: 369px) {
-    font-size: 2.9rem;
+  @media screen and (max-width: 556px) {
+    font-size: 3.82rem;
     letter-spacing: 0;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 2.9rem;
+  }
+  @media screen and (max-width: 329px) {
+    font-size: 2.1em;
+    margin-bottom: 10px;
+    padding-top: 20px;
   }
 }
 .contact {
@@ -159,6 +199,10 @@ h2 {
     @media screen and (max-width: 376px) {
       font-size: 1rem;
     }
+    @media screen and (max-width: 329px) {
+      font-size: 0.9rem;
+      padding-left: 12px;
+    }
   }
   div {
     border-bottom: 1px solid $color-5;
@@ -168,7 +212,9 @@ h2 {
     @media screen and (max-width: 1230px) {
       padding: 20px;
     }
-
+    @media screen and (max-width: 329px) {
+      padding: 7.2px;
+    }
     i {
       font-size: 1.62rem;
       font-family: $font-2;
@@ -187,6 +233,9 @@ h2 {
         font-size: 1.62rem;
         @media screen and (max-width: 376px) {
           font-size: 1.42rem;
+        }
+        @media screen and (max-width: 329px) {
+          font-size: 1.1rem;
         }
       }
     }

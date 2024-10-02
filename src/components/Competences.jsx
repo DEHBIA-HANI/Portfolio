@@ -8,27 +8,55 @@ const Competences = () => {
       <div className="tech-list">
         <TechBox
           title="HTML"
-          description=" Avancé : Création de sites web élégants et dynamiques avec des animations captivantes."
+          description={
+            <>
+              <strong> Avancé :</strong> Création de sites web élégants et
+              dynamiques avec des animations captivantes.
+            </>
+          }
           tech="html"
         />
         <TechBox
           title="JavaScript"
-          description="Intermédiaire : Donnez vie au web avec des interactions fluides et dynamiques."
+          description={
+            <>
+              {" "}
+              <strong>Intermédiaire : </strong>Donnez vie au web avec des
+              interactions fluides et dynamiques.
+            </>
+          }
           tech="javascript"
         />
         <TechBox
           title="React"
-          description="Intermédiaire : Développement d'applications web rapides et réactives."
+          description={
+            <>
+              {" "}
+              <strong>Intermédiaire :</strong> Développement d'applications web
+              rapides et réactives.
+            </>
+          }
           tech="react"
         />
         <TechBox
           title="Sass"
-          description="Avancé : Stylisation de projets avec Sass pour un design moderne et efficace."
+          description={
+            <>
+              <strong>Avancé : </strong>Stylisation de projets avec Sass pour un
+              design moderne et efficace.
+            </>
+          }
           tech="sass"
         />
         <TechBox
           title="Back-End avec Node.js et MongoDB"
-          description="Intermédiaire : J'ai acquis des compétences dans la création de serveurs avec Node.js et Express, intégrant MongoDB via Mongoose pour optimiser les opérations CRUD."
+          description={
+            <>
+              <strong>Intermédiaire :</strong> J'ai acquis des compétences dans
+              la création de serveurs avec Node.js et Express, intégrant MongoDB
+              via Mongoose pour optimiser les opérations CRUD.
+            </>
+          }
           tech="Back-End avec Node.js et MongoDB"
         />
       </div>
