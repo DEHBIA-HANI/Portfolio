@@ -29,8 +29,10 @@ const App = () => {
           content="Développeuse Front-End experte en JavaScript et React."
         />
         <meta property="og:image" content="/image/Dehbia2.webp" />
-        <meta property="og:url" content="https://votre-site-web.com" />{" "}
-        {/* Remplacez par l'URL de votre site */}
+        <meta
+          property="og:url"
+          content="https://portfolio-zg8o-813ej80x5-dehbia-hanis-projects.vercel.app"
+        />{" "}
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -42,8 +44,10 @@ const App = () => {
           content="Développeuse Front-End experte en JavaScript et React."
         />
         <meta name="twitter:image" content="/image/Dehbia2.webp" />
-        <meta name="twitter:url" content="https://votre-site-web.com" />{" "}
-        {/* Remplacez par l'URL de votre site */}
+        <meta
+          name="twitter:url"
+          content="https://portfolio-zg8o-813ej80x5-dehbia-hanis-projects.vercel.app"
+        />{" "}
       </Helmet>
       <BrowserRouter>
         <Header />
