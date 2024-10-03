@@ -24,6 +24,9 @@
       background: $color-5;
       width: 100%;
       margin: auto;
+      @media screen and (max-width: 1081px) {
+        height: 80px;
+      }
       @media screen and (max-width: 515px) {
         height: 70px;
       }
@@ -45,7 +48,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      @media screen and (max-width: 1081px) {
+        width: 60px;
+        height: 60px;
+      }
       @media screen and (max-width: 580px) {
         width: 55px;
         height: 55px;
@@ -69,24 +75,21 @@
         text-decoration: none;
         list-style: none;
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-family: $font-2;
         font-weight: 600;
         @include center;
         height: 100%;
-        @media screen and (max-width: 1044px) {
-          font-size: 1.7rem;
+        @media screen and (max-width: 1315px) {
+          font-size: 1.4rem;
         }
-        @media screen and (max-width: 951px) {
-          font-size: 1.5rem;
-        }
-        @media screen and (max-width: 616px) {
-          font-size: 1.3rem;
-        }
-        @media screen and (max-width: 542px) {
+        @media screen and (max-width: 1081px) {
           font-size: 1.2rem;
         }
-        @media screen and (max-width: 515px) {
+        @media screen and (max-width: 951px) {
+          font-size: 1.1rem;
+        }
+        @media screen and (max-width: 616px) {
           font-size: 1rem;
         }
         @media screen and (max-width: 459px) {

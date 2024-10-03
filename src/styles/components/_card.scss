@@ -6,8 +6,18 @@
   padding: 40px;
   @include center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  gap: 45px;
+
+  @media screen and (max-width: 1454px) {
+    gap: 30px;
+  }
+  @media screen and (max-width: 1210px) {
+    gap: 10px;
+    padding: 25px;
+  }
+  @media screen and (max-width: 1128px) {
+    display: block;
+  }
   @media screen and (max-width: 720px) {
     width: 100%;
     gap: 20px;
@@ -23,33 +33,37 @@
   }
   .card {
     flex: 1 0 25%;
-    min-width: 450px;
+    min-width: 350px;
+    width: 300px;
     background: $color-2;
     border-radius: 35px;
     margin: 5px;
     padding: 26px 15px 30px;
     overflow: hidden;
-    @media screen and (max-width: 1195px) {
+    @media screen and (max-width: 1453px) {
+      min-width: 290px;
+    }
+    @media screen and (max-width: 1128px) {
       display: grid;
       grid-template-columns: 40% 60%;
       gap: 50px;
       align-items: center;
-    }
-    @media screen and (max-width: 941px) {
-      display: block;
-    }
-    @media screen and (max-width: 498px) {
-      min-width: 430px;
+      min-width: 100%;
+      margin-bottom: 20px;
     }
     @media screen and (max-width: 492px) {
       min-width: 290px;
+      margin: auto;
+      margin-bottom: 10px;
+      display: block;
+      justify-content: center;
     }
     @media screen and (max-width: 329px) {
       min-width: 280px;
     }
     img {
       width: 80%;
-      height: 370px;
+      height: 300px;
       object-fit: cover;
       object-position: top;
       display: block;
@@ -60,15 +74,18 @@
       @media screen and (max-width: 1195px) {
         width: 100%;
       }
+      @media screen and (max-width: 1128px) {
+        height: 240px;
+      }
       @media screen and (max-width: 941px) {
         width: 90%;
       }
-      @media screen and (max-width: 492px) {
-        height: 290px;
-        width: 80%;
+      @media screen and (max-width: 572px) {
+        height: 200px;
       }
-      @media screen and (max-width: 340px) {
-        height: 250px;
+      @media screen and (max-width: 492px) {
+        height: 230px;
+        width: 80%;
       }
       @media screen and (max-width: 329px) {
         width: 88%;
@@ -80,11 +97,15 @@
       letter-spacing: 1px;
       line-height: 20px;
       color: $color-4;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 500;
+      @media screen and (max-width: 572px) {
+        font-size: 1.1rem;
+        line-height: 3px;
+      }
       @media screen and (max-width: 492px) {
-        font-size: 1.3rem;
-        line-height: 1rem;
+        font-size: 1.1rem;
+        line-height: 0.3rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 1rem;
@@ -94,15 +115,15 @@
     }
     h5 {
       letter-spacing: 1px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 300;
       color: $color-4;
-      margin-top: 10px;
-      @media screen and (max-width: 492px) {
-        font-size: 1rem;
-      }
-      @media screen and (max-width: 340px) {
+      margin-top: 8px;
+      @media screen and (max-width: 572px) {
         font-size: 0.9rem;
+      }
+      @media screen and (max-width: 492px) {
+        font-size: 0.8rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 0.75rem;
@@ -113,6 +134,9 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      @media screen and (max-width: 1376px) {
+        gap: 8px;
+      }
       @media screen and (max-width: 480px) {
         gap: 8px;
       }
@@ -122,19 +146,23 @@
         border-radius: 18px;
         padding: 7px 6px;
         margin: 0 4px 4px 0;
-        font-size: 1.1rem;
-        width: 165px;
+        font-size: 1rem;
+        width: 140px;
         text-align: center;
-        @media screen and (max-width: 492px) {
-          font-size: 1rem;
-          width: 140px;
-        }
-        @media screen and (max-width: 340px) {
+        @media screen and (max-width: 1336px) {
           font-size: 0.96rem;
+          width: 130px;
+        }
+        @media screen and (max-width: 1265px) {
+          font-size: 0.9rem;
+          width: 120px;
+        }
+        @media screen and (max-width: 572px) {
+          font-size: 0.8rem;
+          width: 90px;
         }
         @media screen and (max-width: 329px) {
           font-size: 0.75rem;
-          width: 100px;
         }
         &:hover {
           transform: scale(1.1);
@@ -147,9 +175,9 @@
       }
     }
     p {
-      font-size: 1.2rem;
-      padding: 20px 15px;
-      background: $color_4;
+      font-size: 1rem;
+      padding: 18px 13px;
+      background: $color_5;
       color: $color-2;
       margin-bottom: 30px;
       border-radius: 0 0 18px 18px;
@@ -191,15 +219,15 @@
       border-radius: 5px;
       border-bottom: 1px solid $color-5;
       background: none;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 500;
       padding: 0;
       margin: 0;
-      @media screen and (max-width: 492px) {
-        font-size: 1rem;
-      }
-      @media screen and (max-width: 340px) {
+      @media screen and (max-width: 572px) {
         font-size: 0.9rem;
+      }
+      @media screen and (max-width: 492px) {
+        font-size: 0.85rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 0.75rem;

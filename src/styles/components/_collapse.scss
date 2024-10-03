@@ -11,8 +11,11 @@
   @media screen and (max-width: 1195px) {
     width: 85%;
   }
-  @media screen and (max-width: 941px) {
-    width: auto;
+  @media screen and (max-width: 519px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 492px) {
+    width: 100%;
   }
   .titleDescription {
     display: flex;
@@ -20,11 +23,11 @@
     align-items: center;
     h4 {
       color: $color-4;
-      font-size: 1.2rem;
+      font-size: 1.09rem;
       font-weight: 500;
-      @media screen and (max-width: 492px) {
-        font-size: 1rem;
+      @media screen and (max-width: 572px) {
         font-weight: 400;
+        font-size: 1rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 0.86rem;
@@ -32,11 +35,11 @@
     }
     i {
       color: $color-4;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       transform: rotate(90deg);
       cursor: pointer;
-      @media screen and (max-width: 492px) {
-        font-size: 1.3rem;
+      @media screen and (max-width: 572px) {
+        font-size: 1.2rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 1rem;
