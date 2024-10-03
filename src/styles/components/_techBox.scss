@@ -27,8 +27,10 @@
       }
     }
   }
-  @media screen and (max-width: 329px) {
+  @media screen and (max-width: 492px) {
     border-radius: 0px;
+  }
+  @media screen and (max-width: 329px) {
     padding: 1.5rem;
   }
 }

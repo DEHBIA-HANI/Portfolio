@@ -15,7 +15,7 @@
   @media screen and (max-width: 720px) {
     width: 100%;
   }
-  @media screen and (max-width: 329px) {
+  @media screen and (max-width: 492px) {
     border-radius: 0px;
     margin-bottom: 0;
   }
@@ -30,14 +30,16 @@
     @media screen and (max-width: 864px) {
       grid-template-rows: 235px 22px 45px 22px 200px 1fr;
     }
-    @media screen and (max-width: 396px) {
-      grid-template-rows: 200px 22px 45px 22px 200px 1fr;
-      padding: 20px 0px;
+    @media screen and (max-width: 492px) {
+      grid-template-rows: 158px 22px 45px 22px 200px 1fr;
+      padding: 18px 0px;
+      gap: 13px;
     }
     @media screen and (max-width: 329px) {
       padding: 10px 0;
       grid-template-rows: 120px 10px 22px 10px 150px 1fr;
       margin-bottom: 10px;
+      gap: 18px;
     }
     .name-container {
       display: grid;
@@ -93,8 +95,8 @@
       font-size: 1.73rem;
       font-family: $font-2;
       letter-spacing: 1px;
-      @media screen and (max-width: 369px) {
-        font-size: 1.38rem;
+      @media screen and (max-width: 492px) {
+        font-size: 1.3rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 1rem;
@@ -113,7 +115,7 @@
       outline: none;
       box-shadow: 0 8px 1px rgba(255, 255, 255, 0.5),
         0 16px 1px rgba(255, 255, 255, 0.05);
-      @media screen and (max-width: 329px) {
+      @media screen and (max-width: 492px) {
         box-shadow: 0 4px 1px rgba(255, 255, 255, 0.5),
           0 10px 1px rgba(255, 255, 255, 0.05);
       }
@@ -125,6 +127,9 @@
     input[type="text"],
     input[type="email"] {
       height: 46px;
+      @media screen and (max-width: 492px) {
+        height: 38px;
+      }
       @media screen and (max-width: 329px) {
         height: 30px;
       }
@@ -140,8 +145,8 @@
     display: flex;
     align-items: flex-end;
     margin-top: 53.63px;
-    @media screen and (max-width: 396px) {
-      margin-top: 43.89px;
+    @media screen and (max-width: 492px) {
+      margin-top: 30.89px;
     }
     @media screen and (max-width: 329px) {
       margin-top: 10.89px;
@@ -151,8 +156,8 @@
       font-family: $font-2;
       padding: 10px 33px;
 
-      @media screen and (max-width: 376px) {
-        font-size: 1.42rem;
+      @media screen and (max-width: 492px) {
+        font-size: 1.3rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 1rem;
@@ -172,8 +177,10 @@ h2 {
     font-size: 3.82rem;
     letter-spacing: 0;
   }
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 492px) {
     font-size: 2.9rem;
+    padding-top: 5px;
+    margin-bottom: 13px;
   }
   @media screen and (max-width: 329px) {
     font-size: 2.1em;
@@ -196,6 +203,9 @@ h2 {
     @media screen and (max-width: 629px) {
       font-size: 1.3rem;
     }
+    @media screen and (max-width: 492px) {
+      font-size: 1.1rem;
+    }
     @media screen and (max-width: 376px) {
       font-size: 1rem;
     }
@@ -211,6 +221,9 @@ h2 {
     align-items: center;
     @media screen and (max-width: 1230px) {
       padding: 20px;
+    }
+    @media screen and (max-width: 492px) {
+      padding: 12px;
     }
     @media screen and (max-width: 329px) {
       padding: 7.2px;
@@ -231,8 +244,8 @@ h2 {
         padding-right: 0;
         text-align: center;
         font-size: 1.62rem;
-        @media screen and (max-width: 376px) {
-          font-size: 1.42rem;
+        @media screen and (max-width: 492px) {
+          font-size: 1.4rem;
         }
         @media screen and (max-width: 329px) {
           font-size: 1.1rem;

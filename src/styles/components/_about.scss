@@ -23,6 +23,9 @@
   @media screen and (max-width: 685px) {
     margin-top: 150px;
   }
+  @media screen and (max-width: 492px) {
+    margin-top: 112px;
+  }
   @media screen and (max-width: 329px) {
     margin-top: 80px;
   }
@@ -43,9 +46,8 @@
       @media screen and (max-width: 621px) {
         font-size: 2rem;
       }
-      @media screen and (max-width: 385px) {
-        font-size: 1.72em;
-        padding-top: 10px;
+      @media screen and (max-width: 492px) {
+        font-size: 1.26rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 1em;
@@ -67,16 +69,12 @@
         letter-spacing: 2px;
         margin-bottom: 0;
       }
-      @media screen and (max-width: 385px) {
-        font-size: 2.2em;
-        padding-top: 10px;
-      }
-      @media screen and (max-width: 349px) {
-        font-size: 2.2em;
+      @media screen and (max-width: 492px) {
+        font-size: 1.8rem;
+        padding-top: 7px;
       }
       @media screen and (max-width: 329px) {
         font-size: 1.4em;
-        padding-top: 7px;
       }
     }
     p {
@@ -95,21 +93,18 @@
       }
       @media screen and (max-width: 621px) {
         margin-top: 26px;
-      }
-      @media screen and (max-width: 621px) {
         font-size: 1.2rem;
         text-align: unset;
       }
-      @media screen and (max-width: 469px) {
+      @media screen and (max-width: 492px) {
+        line-height: 1.4rem;
+        font-size: 1.1rem;
+        margin-top: 11px;
         text-align: center;
-        line-height: 1.65rem;
-        margin-bottom: 0;
       }
       @media screen and (max-width: 329px) {
         font-size: 0.9em;
-        line-height: 1.4rem;
         margin-top: 10px;
-        text-align: center;
       }
     }
   }
@@ -136,10 +131,14 @@
         width: 180px;
         height: 180px;
       }
+      @media screen and (max-width: 492px) {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 0px;
+      }
       @media screen and (max-width: 329px) {
         width: 100px;
         height: 100px;
-        margin-bottom: 0px;
       }
     }
   }

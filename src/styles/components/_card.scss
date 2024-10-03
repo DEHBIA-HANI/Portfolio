@@ -12,9 +12,13 @@
     width: 100%;
     gap: 20px;
   }
+  @media screen and (max-width: 492px) {
+    padding: 14px;
+    border-radius: 0px;
+    gap: 7px;
+  }
   @media screen and (max-width: 329px) {
     padding: 10px;
-    border-radius: 0px;
     gap: 6px;
   }
   .card {
@@ -37,33 +41,12 @@
     @media screen and (max-width: 498px) {
       min-width: 430px;
     }
-    @media screen and (max-width: 481px) {
-      min-width: 380px;
-    }
-    @media screen and (max-width: 481px) {
-      min-width: 360px;
-    }
-    @media screen and (max-width: 400px) {
-      min-width: 320px;
-    }
-    @media screen and (max-width: 380px) {
-      min-width: 300px;
-    }
-    @media screen and (max-width: 340px) {
+    @media screen and (max-width: 492px) {
       min-width: 290px;
     }
     @media screen and (max-width: 329px) {
       min-width: 280px;
     }
-    // &::after {
-    //   content: "";
-    //   height: 90px;
-    //   width: 100%;
-    //   background: linear-gradient(180deg, rgba(195, 34, 34, 0) 0%, $color-4 55%);
-    //   transform: translateX(-50%);
-    //   bottom: 0;
-    //   border-radius: 0 0 30px 30px;
-    // }
     img {
       width: 80%;
       height: 370px;
@@ -80,14 +63,9 @@
       @media screen and (max-width: 941px) {
         width: 90%;
       }
-      @media screen and (max-width: 408px) {
-        width: 100%;
-      }
-      @media screen and (max-width: 495px) {
-        height: 340px;
-      }
-      @media screen and (max-width: 400px) {
-        height: 300px;
+      @media screen and (max-width: 492px) {
+        height: 290px;
+        width: 80%;
       }
       @media screen and (max-width: 340px) {
         height: 250px;
@@ -104,11 +82,9 @@
       color: $color-4;
       font-size: 1.5rem;
       font-weight: 500;
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 492px) {
         font-size: 1.3rem;
-      }
-      @media screen and (max-width: 340px) {
-        font-size: 1.2rem;
+        line-height: 1rem;
       }
       @media screen and (max-width: 329px) {
         font-size: 1rem;
@@ -122,7 +98,7 @@
       font-weight: 300;
       color: $color-4;
       margin-top: 10px;
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 492px) {
         font-size: 1rem;
       }
       @media screen and (max-width: 340px) {
@@ -149,9 +125,9 @@
         font-size: 1.1rem;
         width: 165px;
         text-align: center;
-        @media screen and (max-width: 400px) {
+        @media screen and (max-width: 492px) {
           font-size: 1rem;
-          width: 156px;
+          width: 140px;
         }
         @media screen and (max-width: 340px) {
           font-size: 0.96rem;
@@ -219,7 +195,7 @@
       font-weight: 500;
       padding: 0;
       margin: 0;
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 492px) {
         font-size: 1rem;
       }
       @media screen and (max-width: 340px) {
