@@ -28,10 +28,6 @@ const App = () => {
           property="og:description"
           content="Développeuse Front-End experte en JavaScript et React."
         />
-        <meta
-          property="og:image"
-          content="https://dehbia.vercel.app/image/Dehbia2.webp"
-        />
         <meta property="og:url" content="https://dehbia.vercel.app/" />{" "}
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -42,10 +38,6 @@ const App = () => {
         <meta
           name="twitter:description"
           content="Développeuse Front-End experte en JavaScript et React."
-        />
-        <meta
-          name="twitter:image"
-          content="https://dehbia.vercel.app/image/Dehbia2.webp"
         />
         <meta name="twitter:url" content="https://dehbia.vercel.app/" />{" "}
       </Helmet>
