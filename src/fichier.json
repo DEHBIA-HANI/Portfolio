@@ -29,7 +29,7 @@
         "cover": "/image/Kasa.webp",
         "site": {
             "gitHub": "https://github.com/DEHBIA-HANI/Kasa.git",
-            "link": "https://kasa-hqv92s34x-dehbia-hanis-projects.vercel.app/"
+            "link": "https://kasa-dehbia-hanis-projects.vercel.app/"
         },
         "languages": ["React","Sass"],
         "description": "développement d'une application front-end avec React et React Router, création d'une interface utilisateur moderne et réactive, intégration d'un carrousel interactif pour une navigation fluide des images de propriétés, mise en page responsive basée sur des maquettes Figma et des données JSON simulées, tout en respectant les normes de codage.",
